@@ -4,7 +4,7 @@ folderPath = "C:/path/to/photos/"
 
 folders = [folderPath + folderName + "/" for folderName in os.listdir(folderPath) if not os.path.isfile(folderName)]
 count = 1
-timeOffset = 60 * 60 * 24 * 30 # all nPhoto dates are 30 days behind for some reason
+timeOffset = 0 # add an optional offset to all nPhoto timestamps
 
 for folder in folders:
     print(folder)
